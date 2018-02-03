@@ -14,4 +14,9 @@ public class SanketBigDataDemo1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(SanketBigDataDemo1Application.class, args);
 	}
+	
+	
 }
+
+
+
