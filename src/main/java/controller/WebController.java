@@ -28,6 +28,7 @@ public class WebController {
 		return "Done";
 	}
 
+	//fetch all customers
 	@RequestMapping("/findall")
 	public String findAll() {
 		String result = "";
@@ -40,6 +41,7 @@ public class WebController {
 		return result;
 	}
 
+	//find a customer by id
 	@RequestMapping("/find")
 	public String findById(@RequestParam("id") Long id) {
 		String result = "";
@@ -58,6 +60,7 @@ public class WebController {
 		return "Done";
 	}
 
+	// delete a customer
 	@RequestMapping("/delete")
 	public String deleteById(@RequestParam("id") Long id) {
 		customerRepository.delete(id);
